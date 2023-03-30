@@ -49,7 +49,9 @@ body, html {
 .list-contacts {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 50px;
+  padding: 0;
 }
 
 .list-contacts__item {
@@ -149,4 +151,16 @@ body, html {
 .card__title {
   font-size: 32px;
   line-height: 42px;
+}
+
+
+@media(max-width: 425px) {
+  .position {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .list-contacts {
+    gap: 10px;
+  }
 }
